@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Page</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 40px auto;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Help Page</h1>
+  <p>Welcome to our help page. Here you can find answers to frequently asked questions and get assistance on using our website.</p>
+  <h2><span th:text="${name}"></span></h2>
+  <h2>FAQs</h2>
+  <ul>
+    <li><strong>How do I create an account?</strong><br>
+        To create an account, click on the "Sign Up" button located at the top-right corner of the page. Fill in the required information and click "Register" to create your account.</li>
+    <li><strong>How do I reset my password?</strong><br>
+        If you've forgotten your password, you can reset it by clicking on the "Forgot Password?" link on the login page. Follow the instructions to reset your password.</li>
+    <li><strong>How do I contact customer support?</strong><br>
+        For any inquiries or assistance, you can reach out to our customer support team by emailing support@example.com or calling +1-800-123-4567.</li>
+  </ul>
+  
+  <h2>Contact Us</h2>
+  <p>If you have any further questions or need additional assistance, please don't hesitate to contact us:</p>
+  <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+  <p>Phone: +1-800-123-4567</p>
+</div>
+</body>
+</html>
